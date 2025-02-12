@@ -39,8 +39,8 @@
                 width: 800px;
                 margin: 100px auto;
                 background-color: #087f5b;
-                padding: 32px;
-                padding-left: 86px;
+                padding: 32px 48px 32px 86px;
+
                 border-radius: 8px;
                 position: relative;
 
@@ -113,6 +113,9 @@
                 left: 50%;
                 bottom: 0;
                 transform: translate(-50%, 32px);
+
+                display: flex;
+                gap: 12px;
             }
 
             .dot {
@@ -123,6 +126,10 @@
                 border-radius: 50%;
                 cursor: pointer;
             }
+
+            .dot--fill {
+                background-color: #087f5b;
+            }
         </style>
     </head>
     <body>
@@ -131,9 +138,7 @@
             <blockquote class="testimonial">
                 <p class="testimonial-text">
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt earum perspiciatis voluptatum commodi numquam sed.
-                    Perspiciatis, nostrum reprehenderit eaque accusantium
-                    inventore voluptatum omnis."
+                    Sunt earum perspiciatis voluptatum commodi numquam sed. "
                 </p>
                 <p class="testimonial-author">Maria de Almeida</p>
                 <p class="testimonial-job">
@@ -174,7 +179,7 @@
                 </svg>
             </button>
             <div class="dots">
-                <button class="dot">&nbsp;</button>
+                <button class="dot dot--fill">&nbsp;</button>
                 <button class="dot">&nbsp;</button>
                 <button class="dot">&nbsp;</button>
                 <button class="dot">&nbsp;</button>
