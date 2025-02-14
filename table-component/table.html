@@ -37,15 +37,30 @@
             table {
                 width: 800px;
                 margin: 100px auto;
-                border: 1px solid #343a40;
+                font-size: 18px;
+                /* border: 1px solid #343a40; */
                 border-collapse: collapse;
             }
 
             td,
             th {
-                border: 1px solid #343a40;
+                /* border: 1px solid #343a40; */
                 padding: 16px 24px;
                 text-align: left;
+            }
+
+            thead th {
+                background-color: #087f5b;
+                color: #fff;
+                width: 25%;
+            }
+
+            tbody tr:nth-child(odd) {
+                background-color: #f8f9fa;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #e9ecef;
             }
         </style>
     </head>
