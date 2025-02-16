@@ -32,6 +32,15 @@
                 font-family: "Inter", sans-serif;
                 color: #343a40;
                 line-height: 1;
+                display: flex;
+                justify-content: center;
+            }
+
+            .pagination {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-top: 200px;
             }
 
             .btn {
@@ -70,12 +79,14 @@
             }
 
             .page-link:hover,
-            .page-link:active {
+            .page-link:active,
+            .page-link.page-link--current {
                 background-color: #087f5b;
                 color: #fff;
             }
 
             .dots {
+                color: #868e96;
             }
         </style>
     </head>
@@ -99,7 +110,7 @@
             </button>
             <a href="#" class="page-link">1</a>
             <a href="#" class="page-link">2</a>
-            <a href="#" class="page-link">3</a>
+            <a href="#" class="page-link page-link--current">3</a>
             <a href="#" class="page-link">4</a>
             <a href="#" class="page-link">5</a>
             <a href="#" class="page-link">6</a>
